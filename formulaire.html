@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+  <title>formulaire</title>
+</head>
+
+<body>
+  <header class="headerStyle">
+
+    <img src="sims_images/logo_sims.png" alt="logo sims" width="50" height="50" class="logoStyle">
+    <nav>
+      <a href="index.html" target="_self" class="boutonStyle1">SIMS™ 4</a>
+      <a href="formulaire.html" target="_blank" class="boutonStyle2" rel="stylesheet">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="banniereStyle1">
+      <h1 class="titreStyle">formulaire d'inscription</h1>
+    </div>
+
+    <div>
+      <h2 class="formulaire">formulaire :</h2>
+    </div>
+    <form method="post" action="page.php">
+      <div class="container">
+        <div class="column">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" placeholder="Nom">
+
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" name="prenom" placeholder="Prénom">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email">
+
+          <label for="genre">Vous êtes</label>
+          <select id="genre" name="genre">
+            <option value="homme">Un homme</option>
+            <option value="femme">Une femme</option>
+            <option value="autre">Autre</option>
+          </select>
+
+          <label>Mes préférés</s></label>
+          <div class="checkbox-group">
+            <label for="sims1"><input type="checkbox" id="sims1" name="sims" value="Sims 1"> Sims 1</label>
+            <label for="sims2"><input type="checkbox" id="sims2" name="sims" value="Sims 2"> Sims 2</label>
+            <label for="sims3"><input type="checkbox" id="sims3" name="sims" value="Sims 3"> Sims 3</label>
+            <label for="sims4"><input type="checkbox" id="sims4" name="sims" value="Sims 4"> Sims 4</label>
+          </div>
+        </div>
+
+        <div class="column">
+          <label for="date">Date de l'événement</label>
+          <input type="date" id="date" name="date">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4"  placeholder="Une petite suggestion ?"></textarea>
+          
+          <label>Je suis plus</label>
+          <div class="radio-group">
+            <label for="mac"><input type="radio" id="mac" name="systeme" value="Mac"> Mac</label>
+            <label for="windows"><input type="radio" id="windows" name="systeme" value="Windows"> Windows</label>
+          </div>
+        </div>
+      </div>
+
+      <input class="button" type="submit" value="Envoyer">
+  </main>
+
+  <footer>
+    <div class="footer">
+      <p> © 2023 Maxis - Electronic Arts Inc. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
