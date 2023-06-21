@@ -33,6 +33,7 @@
     <div>
       <h2 class="formulaire">formulaire ;</h2>
     </div>
+    
     <form method="post" action="page.php">
       <div class="container">
         <div class="column">
@@ -46,8 +47,7 @@
           <input type="email" id="email" name="email" placeholder="Email">
 
           <label for="genre">Vous êtes</label>
-          <select id="genre" name="genre" class="dropdown-select">
-
+          <select id="genre" name="genre" class="genre">
             <option value="femme">Une femme</option>
             <option value="homme">Un homme</option>
             <option value="autre">Autre</option>
@@ -64,7 +64,7 @@
 
         <div class="column">
           <label for="date">Date de l'événement</label>
-          <input type="date" id="date" name="date" class="calendar-input">
+          <input type="date" id="date" name="date" class="calendar">
 
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="4" placeholder="Une petite suggestion ?"></textarea>
